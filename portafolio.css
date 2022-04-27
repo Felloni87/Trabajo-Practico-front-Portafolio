@@ -1,20 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: #f6f7fb;
+    background-color:white;
     font-size: 16px;
     font-family:'Montserrat', sans-serif;
-    color: #2e2e31;
+    color: #2e2e31
    
 }
 header{
     /* outline: 1px solid yellow; */
     width: 100%;
     position:fixed;
-    top:0;
+     top:0; 
     padding: 25px;
     background-color: white;
     box-shadow: 0 0 29px 0 rgb(134, 134, 134) ;
@@ -50,37 +51,32 @@ a{
 #ctt{
     color: white;
 }
-/* Seccion HOLA */
-section{
-    margin: 90px 0 0 0;
-    padding: 110 40 130 40;
+/* ***************************************
+ Seccion HOLA 
+*************************************** */
+.hola{
+    margin-top: 90px;
+    padding: 110px 40px 130px 40px;
     display: flex;
-    justify-content: center;
+    align-items: center;  
+    /* justify-content: center;  */
     /* background-color: yellow; */
     
 }
-
 .centrar{
-    width: 80%;
+    width: 100%;
     display:flex;
     flex-direction: row; 
     align-items: center;
-    justify-content:space-between;
+    justify-content:space-between;  
 
-}
-
-.textoPresentacion{
-    padding: 0;
-    width: 40%;
-    height: 50%;
-    align-items: center;
-}
+} 
 
 #saludo{
     font-family: 'Montserrat',sans-serif;
     font-size: 30px;
     color: #2e2e31;
-    margin: 0 0 5px;
+    margin: 5px;
     font-weight: 800;
 }
 
@@ -90,7 +86,7 @@ h1{
     color: #8338ec;
     margin: 0 0 5px;
     font-weight: 900;
-}
+} 
 
 #descripcion{
     font-family: 'Montserrat',sans-serif;
@@ -104,7 +100,7 @@ h1{
     border-radius: 100px;
     color: white;
     font-weight: 500;
-    width: 30%;
+    width: 50%;
     padding: 15px 40px;
     display: flex;
     justify-content: center;
@@ -116,9 +112,8 @@ h1{
 .img{
     display: block;
 
-    width: 40%;
-    height: 50%;
-    align-items: center;
+    width: 500px;
+    /* align-items: center; */
 }
 img{
     width: 100%;
@@ -126,9 +121,9 @@ img{
 /* seccion CONOCIMIENTOS */
 
 .conocimientos{
-    margin: 90px 0 0 0;
-    padding: 110 40 130 40;
-    background-color: #f6f7fb;;
+    margin-top: 90px;
+    padding: 110px 40px 130px 40px;
+    background-color: #f6f7fb;
     display: flex;
     justify-content: center;
 }
@@ -143,23 +138,106 @@ img{
 h2{
     margin: 37px 0 16;
     font-size: 45px;
+    
 }
 p{
-    width: 40%;
+    /* width: 40%; */
     margin: 16px 0 16px 0;
 }
 .divConocimientos{
     width: 80%;
     display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-between;
+     flex-wrap: wrap; 
+    /* justify-content:space-between; */
 
 }
 .iconos{
-    outline: 1px solid black;
-    width: 30%;
-    height: 30%;
    
+    background-color: white;
+    border: 1px solid #252627;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 30px; 
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
 
+    font-size: large;
+
+}
+.contenedorDeIconos{
+    text-center
+}
+
+i{
+    /* justify-content: center; */
+    font-size: 100px;
+}
+
+/* CITA */
+
+.cita{
+    width: 100%;
+    height: 550px;
+    background-color: #8338ec;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.textoCita{
+    font-size: 20px;
+}
+.autorCita{
+    font-weight: 900;
+  font-size: 1.69em;
+}
+
+
+/* MIS PROYECTOS */
+
+.proyectos{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tituloProyectos{
+    font-weight: 900;
+}
+
+.listaProyectos{
+
+    width: 80%;
+    margin-top: 40px;
+    display:flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content:space-between;
+    
+
+}
+.fotoProyecto{
+    width: 30%;
+    height: 300px;
+    border: 1px solid #252627;
+    border-radius: 8px;
+    margin:10px;
+    justify-content: space-between;
+
+}
+
+/* SECCION FORMULARIO DE CONTACTO */
+
+
+/* FOOTER  */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #8338ec;
+    color: white;
 }
