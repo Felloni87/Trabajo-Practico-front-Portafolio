@@ -154,7 +154,7 @@ p{
 .iconos{
    
     background-color: white;
-    border: 1px solid #252627;
+    border: 1px  #767879;
     border-radius: 8px;
     margin: 10px;
     padding: 30px; 
@@ -167,8 +167,9 @@ p{
 
 }
 .contenedorDeIconos{
-    text-center
+    text-align: center;
 }
+
 
 i{
     /* justify-content: center; */
