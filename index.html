@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
       rel="stylesheet"
       preload
-    />
+      />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -19,50 +19,52 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/548-5488592_foco-dibujo-png-sky-on-demand-logo-transparent.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
   </head>
   <body>
-    <!-- Encabezado con menu de navegacion horizontal -->
+
+    <!-- **** Encabezado con menu de navegacion horizontal *** -->
+
     <header>
-      <nav>
+      <nav class="menu-nav-superior">
         <ul>
-          <li><a href="#presentacion">HOLA</a></li>
-          <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
-          <li><a href="#proyectos">PROYECTOS</a></li>
-          <li class="contacto"><a href="#contacto" id="ctt">CONTACTO</a></li>
+          <li><a class="menuHorizontal" href="#seccion-hola">HOLA</a></li>
+          <li><a class="menuHorizontal" href="#seccion-conocimientos">CONOCIMIENTOS</a></li>
+          <li><a class="menuHorizontal" href="#seccion-proyectos">PROYECTOS</a></li>
+          <li class="contacto"><a class="menuHorizontal"  href="#seccion-contacto" id="ctt">CONTACTO</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Seccion HOLA -->
+    <!-- *** Seccion HOLA *** -->
 
-    <section class="hola" id="presentacion">
-      <div class="centrar">
+    <section class="hola" id="seccion-hola">
         <div class="textoPresentacion">
-          <p id="saludo">¡Hola! Soy</p>
-          <h1>Ada Lovelance</h1>
+          <p id="saludo">¡Hola! Soy</p><br>
+          <h1>Eugenia Felloni</h1><br>
           <p id="descripcion">
             Desarrolladora, guitarrista y fan de las matematicas
           </p>
-          <a href="#lo que hago" id="btn">LO QUE HAGO</a>
+          <a href="#seccion-conocimientos" id="btn">LO QUE HAGO</a> 
         </div>
 
-        <div class="img">
-          <img src="imagenes/undraw_dream_world_re_x2yl.svg" alt="imagen" />
-        </div>
-      </div>
+        <div class="imagenPortada">
+          <img src="imagenes/undraw_dream_world_re_x2yl.svg" alt="caricatura de portada, muchacha soñadora " /> 
+        </div> 
+        
+       
+
     </section>
 
-    <!-- SECCION CONOCIMIENTOS -->
+    <!-- *** Seccion CONOCIMIENTOS **** -->
 
-    <section class="conocimientos">
-      <div class="centrarConocimientos">
-        <h2>Mis Conocimientos</h2>
+    <section class="conocimientos" id="seccion-conocimientos">
+        <h2 class="titulo-conocimentos">Mis Conocimientos</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-          perferendis adipisci error iusto fugit placeat quo vitae at enim ab,
-          debitis impedit laborum aliquid molestias quae labore nostrum omnis
-          beatae?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.  
         </p>
         <div class="divConocimientos">
           <div class="iconos">
@@ -71,10 +73,8 @@
           </div>
 
           <div class="iconos">
-            <div class="contenedorDeIconos">
               <i class="fa-brands fa-css3-alt" style="color: #3592cb"></i>
               <p>CSS 3</p>
-            </div>
           </div>
 
           <div class="iconos">
@@ -96,11 +96,10 @@
             <i class="fab fa-git-alt git-icon" style="color: #e44c31"></i>
             <p>Git</p>
           </div>
-        </div>
       </div>
     </section>
 
-    <!-- SECCION CITA  -->
+    <!-- *** Seccion CITA *** -->
 
     <section class="cita">
       <i class="fa-solid fa-quote-right"></i>
@@ -112,9 +111,9 @@
       <h2 class="autorCita">Someon</h2>
     </section>
 
-    <!-- SECCION MIS PROYECTOS -->
+    <!-- *** Seccion MIS PROYECTOS *** -->
 
-    <section class="proyectos">
+    <section class="proyectos" id="seccion-proyectos">
       <h2 class="tituloProyectos">Mis proyectos</h2>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet,
@@ -126,35 +125,35 @@
           <p>Portfolio</p>
         </div>
         <div class="fotoProyecto">
-          <img src="" alt="" />
+          <img src="imagenes/undraw_reading_time_re_phf7.svg" alt="" />
           <p>Generador de memes</p>
         </div>
         <div class="fotoProyecto">
-          <img src="" alt="" />
+          <img src="imagenes/undraw_couple_love_re_3fw6.svg" alt="" />
           <p>Match3</p>
         </div>
         <div class="fotoProyecto">
-          <img src="" alt="" />
+          <img src="imagenes/undraw_calculator_re_alsc.svg" />
           <p>Controlador de Gastos</p>
         </div>
         <div class="fotoProyecto">
-          <img src="" alt="" />
+          <img src="imagenes/undraw_online_calendar_re_wk3t.svg" alt="" />
           <p>Administrador de reuniones</p>
         </div>
         <div class="fotoProyecto">
-          <img src="" alt="" />
+          <img src="imagenes/undraw_apps_re_ienc.svg" alt="" />
           <p>Todo app</p>
         </div>
         <div class="fotoProyecto">
-          <img src="" alt="" />
+          <img src="imagenes/undraw_netflix_q-00-o.svg" alt="" />
           <p>Buscador de peliculas</p>
         </div>
       </div>
     </section>
 
-    <!-- SECCION FORMULARIO DE CONTACTO -->
+    <!-- *** Seccion FORMULARIO DE CONTACTO *** -->
 
-    <section class="contenedorContacto">
+    <section class="contenedorContacto" id="seccion-contacto">
       <div class="formulario">
         <div class="contactame">
           <h2>Contactame</h2>
@@ -164,42 +163,115 @@
             recusandae eius omnis totam minus, tenetur odit debitis. Nesciunt
             veniam vero culpa necessitatibus.
           </p>
-          <i>twiter</i>
-          <i>github</i>
-          <i>linkedin</i>
-          <i>mail</i>
+          <div class="iconosFormulario"> 
+           <ul> 
+             <a href="https://github.com/Felloni87?tab=repositories">
+             <li class="iconoch"><i class="fa-brands fa-github-alt"></i>
+              <span>Felloni87</span></li></a>
+              <a href="https://www.linkedin.com/in/mariaeugeniafelloni/">     
+             <li class="iconoch"><i class="fa-brands fa-linkedin-in"></i>
+              <span>Maria Eugenia Felloni</span></li></a>
+              <a href="">
+             <li class="iconoch"><i class="fa-solid fa-envelope"></i>
+              <span>eugef_87@hotmail.com</span></li></a>
+            </ul>
+          </div>
         </div>
         <div class="escribime">
           <h2>Escribime</h2>
-          <form action=""></form>
-
-          <button>Enviar</button>
+           <form class="formularioContacto">
+            <div class="campo nombre">
+              <label>Nombre:*</label> <br>
+              <input class="input-nom-ape"
+              type="text"  
+              name="nombre" 
+              placeholder="p. ej: Maria Eugenia" 
+              id="idnombre" 
+              maxlength="20"
+              aria-label="Nombre"
+              required 
+              />
+              
+            </div>
+            <div class="campo apellido">
+              <label for="idapellido">Apellido:*</label><br>
+              <input class="input-nom-ape" 
+              type="text"
+              name="apellido"
+              placeholder="p. ej: Felloni" 
+              id="idapellido"
+              aria-label="Apellido"
+              required
+               />
+            </div>
+            <div class="campo email">
+              <label for="idemail">Email:*</label><br>
+              <input class="inputEmail" 
+              type="email" 
+              name="email" 
+              placeholder="p. ej: eugef_87@hotmail.com" 
+              id="idemail"
+              aria-label="Email"
+              required>
+            </div>
+            <div class="campo mensaje">
+              <label for="idmensaje">Mensaje:*</label><br>
+              <textarea class="inputMensaje" 
+              name="mensaje" 
+              placeholder="Escríba un mensaje aquí." 
+              id="idmensaje" 
+              aria-label="Mensaje"
+              cols="30" 
+              rows="10"
+              required
+              ></textarea>
+            </div>
+              <button type="submit" class="boton-contacto">
+               Enviar
+              </button>
+          </form>  
         </div>
       </div>
     </section>
-<!-- FOOTER  -->
+<!-- *** Seccion FOOTER *** -->
 
 <footer>
-  <div>
-  <nav>
+  <nav class="footerNav">
     <ul>
-      <li><a href="#hola">HOLA</a></li>
-      <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
-      <li><a href="#proyectos">PROYECTOS</a></li>
-      <li class="contacto"><a href="#contacto" id="ctt">CONTACTO</a></li>
+      <li><a class="menu-horizontal-footer" href="#seccion-hola">HOLA</a></li>
+      <li><a class="menu-horizontal-footer" href="#seccion-conocimientos">CONOCIMIENTOS</a></li>
+      <li><a class="menu-horizontal-footer" href="#seccion-proyectos">PROYECTOS</a></li>
+      <li><a class="menu-horizontal-footer" href="#seccion-contacto">CONTACTO</a></li>
     </ul>
   </nav>
-</div>
+  
 
-<div>
-  <i>twiter</i>
-  <i>github</i>
-  <i>linkedin</i>
-  <i>mail</i>
+  <ul class="iconos-redes">
+    <li class="itemIcono"> 
+      <a class="circuloIcono" href="">
+         <i class="fa-brands fa-twitter"></i>
+     </a>
+    </li>
 
-</div>
+    <li class="itemIcono"> 
+      <a class="circuloIcono" href="https://github.com/Felloni87">
+         <i class="fa-brands fa-github-alt"></i>
+     </a>
+    </li>
 
-<p>Hecho con corazon por Ada</p>
+    <li class="itemIcono"> 
+      <a class="circuloIcono" href="https://linkedin.com/in/mariaeugeniafelloni">
+         <i class="fa-brands fa-linkedin-in"></i>
+     </a>
+    </li>
+
+    <li class="itemIcono"> 
+      <a class="circuloIcono" href="">
+         <i class="fa-solid fa-envelope"></i>
+     </a>
+    </li>
+  </ul>
+  Hecho con ❤️ por Euge
 </footer>
 
   </body>
